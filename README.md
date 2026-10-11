@@ -4,6 +4,8 @@ A 35-style × 9-grammar card matrix that turns static artwork into animated expl
 
 **Confidence: High (≥80%)** that the style×grammar factorization improves output reproducibility versus free-form prompting — the claim rests on determinism of the matrix itself (same inputs, same card), not on aesthetic quality, which stays subjective.
 
+<p align="center"><img src="docs/demo.gif" alt="demo" width="720"></p>
+
 ## Problem
 
 Teams doing animated explainers face a quiet failure mode: every run reinvents the vocabulary. "Make it watercolor-ish, reveal the point slowly" is not a spec; it is a wish. Downstream QA then has nothing to check against — a card may be missing motion hints, have a wrong step count, or silently drift schema. The industry answer is bigger end-to-end video models, which trade *controllability* for *fluency*.
